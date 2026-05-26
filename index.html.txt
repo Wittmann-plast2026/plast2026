@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wittmann - Plast2026</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: white;
+      font-family: Arial, sans-serif;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 42px;
+      margin-bottom: 40px;
+      color: #111;
+    }
+
+    .intro {
+      font-size: 18px;
+      text-align: center;
+      max-width: 900px;
+      margin: auto;
+      margin-bottom: 70px;
+    }
+
+    .logos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 40px;
+      align-items: center;
+      justify-items: center;
+    }
+
+    .logo-box {
+      width: 220px;
+      height: 140px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      border: 1px solid #eee;
+      border-radius: 12px;
+      transition: 0.3s;
+      background: white;
+    }
+
+    .logo-box:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    }
+
+    .logo-box img {
+      max-width: 100%;
+      max-height: 90px;
+      object-fit: contain;
+    }
+
+    footer {
+      margin-top: 80px;
+      text-align: center;
+      color: #777;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Wittmann - Plast2026</h1>
+
+    <div class="intro">
+      <p>
+        Una soluzione completa per lo stampaggio di silicone liquido (LSR)
+        basata sulla serie SmartPower, con cella produttiva completamente
+        integrata, robotizzazione avanzata e tecnologie ad alta efficienza
+        energetica grazie al sistema servo-idraulico con recupero energetico KERS.
+      </p>
+
+      <p>
+        L’applicazione, realizzata in collaborazione con Silikomart ed Ewikon,
+        prevede la produzione di uno stampo alimentare in silicone per pasticceria,
+        nello specifico una formina “Gugelhupf”, dimostrando concretamente
+        le potenzialità della tecnologia WITTMANN nello stampaggio LSR per
+        applicazioni food-grade ad elevata precisione, qualità superficiale
+        e stabilità di processo.
+      </p>
+
+      <p>
+        Gli stampi Silikomart in silicone alimentare rappresentano oggi
+        un riferimento nel settore bakery e pastry professionale grazie
+        alla loro resistenza termica, flessibilità e qualità costruttiva.
+      </p>
+    </div>
+
+    <div class="logos">
+
+      <div class="logo-box">
+        <img src="witt-logo_pantone.png" alt="Wittmann">
+      </div>
+
+      <div class="logo-box">
+        <img src="silikomart_logo.png" alt="Silikomart">
+      </div>
+
+      <div class="logo-box">
+        <img src="Logo-Ravizza-Packaging-500x500-1.png" alt="Ravizza Packaging">
+      </div>
+
+      <!-- AGGIUNGI QUI I PROSSIMI LOGHI -->
+
+      <!--
+      <div class="logo-box">
+        <img src="logo4.png" alt="Logo 4">
+      </div>
+
+      <div class="logo-box">
+        <img src="logo5.png" alt="Logo 5">
+      </div>
+      -->
+
+    </div>
+
+    <footer>
+      Plast2026 • WITTMANN Group
+    </footer>
+
+  </div>
+
+</body>
+</html>
