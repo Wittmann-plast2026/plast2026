@@ -110,26 +110,24 @@
     <div class="logos">
 
       <div class="logo-box">
-        <img src="witt-logo_pantone.png" alt="Wittmann">
+        <img src="witt-logo.png.png" alt="Wittmann">
       </div>
 
       <div class="logo-box">
-        <img src="silikomart_logo.png" alt="Silikomart">
+        <img src="silikomart_logo.png.png" alt="Silikomart">
       </div>
 
       <div class="logo-box">
-        <img src="Logo-Ravizza-Packaging-500x500-1.png" alt="Ravizza Packaging">
+        <img src="Logo-Ravizza-Packaging.png.png" alt="Ravizza Packaging">
       </div>
-
-      <!-- AGGIUNGI QUI I PROSSIMI LOGHI -->
 
       <!--
       <div class="logo-box">
-        <img src="logo4.png" alt="Logo 4">
+        <img src="Logo-GF-Automazione.png.png" alt="Logo 4">
       </div>
 
       <div class="logo-box">
-        <img src="logo5.png" alt="Logo 5">
+        <img src="Ewikon-logo.png.png" alt="Logo 5">
       </div>
       -->
 
