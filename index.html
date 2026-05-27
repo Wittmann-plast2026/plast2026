@@ -36,17 +36,30 @@
       margin-bottom: 70px;
     }
 
-   .logos {
+  .logos {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
+  max-width: 900px;
+  margin: auto;
 }
 
-
-    .logo-box {
-  width: 220px;
+.logo-box {
+  width: calc(33.333% - 40px);
+  min-width: 220px;
+  max-width: 220px;
   height: 140px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  transition: 0.3s;
+  background: white;
 }
 
     .logo-box:hover {
