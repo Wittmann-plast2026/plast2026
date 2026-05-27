@@ -36,28 +36,18 @@
       margin-bottom: 70px;
     }
 
-    .logos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+   .logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 40px;
-  align-items: center;
-  justify-items: center;
-  max-width: 900px;
-  margin: auto;
 }
 
+
     .logo-box {
-      width: 220px;
-      height: 140px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-      border: 1px solid #eee;
-      border-radius: 12px;
-      transition: 0.3s;
-      background: white;
-    }
+  width: 220px;
+  height: 140px;
+}
 
     .logo-box:hover {
       transform: translateY(-4px);
