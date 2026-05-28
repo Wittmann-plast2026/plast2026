@@ -67,6 +67,26 @@
       max-height: 90px;
       object-fit: contain;
     }
+    
+    #langBtn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+    }
+
+    #langBtn img {
+      width: 40px;
+      height: auto;
+      border-radius: 4px;
+      transition: 0.3s;
+    }
+
+    #langBtn img:hover {
+      transform: scale(1.1);
+    }
 
     footer {
       margin-top: 80px;
@@ -79,31 +99,30 @@
 
 <body>
 
+  <button id="langBtn" onclick="changeLanguage()">
+    <img id="flagImg" src="en.png" alt="English/Italiano">
+  </button>
+
   <div class="container">
 
-    <h1>   </h1>
     <div class="logos">
-    <a class="logo-box" href="https://plastonline.org/" target="_blank">
-        <img src="plast-logo.jpg" alt="plast">
+      <a class="logo-box" href="https://plastonline.org/" target="_blank">
+          <img src="plast-logo.jpg" alt="plast">
       </a>
-        </div>
+    </div>
     
     <div class="intro">
-      <p>
+      <p id="introText" style="color: rgb(158,0,84); font-style: italic; font-weight: bold;">
         Cliccando sui loghi qui sotto, si può accedere ai siti di ciascun partner ed approfondirne la conoscenza.
       </p>
 
-      <p>
+      <p id="mainText">
         WITTMANN è leader nelle soluzioni per lo stampaggio ad iniezione di silicone liquido ed offre isole produttive con soluzioni totalmente integrate, caratterizzate da una elevata efficienza e da bassissimi consumi energetici.
         L’applicazione esposta è stata realizzata in collaborazione con Silikomart S.r.l., fornitrice dello stampo, e di Ewikon Italia S.r.l., fornitrice del sistema di iniezione “a canale freddo”. 
         L’isola produce uno stampino per pasticceria, ovviamente utilizzando un silicone adatto alle applicazioni alimentari.
         L’alimentazione del silicone è stata affidata ad un dispositivo di ultima generazione fornito da ELMET GmbH, anch’essa leader del settore.
         Il prelievo ed il deposito dei pezzi sono stati effettuati utilizzando una attrezzatura fornita da GF Automazioni S.r.l. e per preservare la pulizia del manufatto, i pezzi sono insacchettati a fine linea utilizzando un dispositivo fornito da Ravizza Packaging S.r.l.
 
-      </p>
-
-      <p>
-         
       </p>
     </div>
 
@@ -133,8 +152,6 @@
         <img src="GF-logo.jpg" alt="GF">
       </a>
 
-     
-
     </div>
 
     <footer>
@@ -142,6 +159,31 @@
     </footer>
 
   </div>
+
+  <script>
+    let italian = true;
+    
+    function changeLanguage() {
+      const intro = document.getElementById("introText");
+      const main = document.getElementById("mainText");
+      const btn = document.getElementById("langBtn");
+
+      if (italian) {
+        intro.innerHTML =
+          "By clicking the logos below, you can access each partner's website and learn more about them.";
+        main.innerHTML =
+          "WITTMANN is a leader in liquid silicone injection molding solutions and offers production cells with fully integrated solutions, characterized by high efficiency and extremely low energy consumption. The showcased application was developed in collaboration with Silikomart S.r.l., mold supplier, and Ewikon Italia S.r.l., supplier of the cold runner injection system. The production cell manufactures a pastry mold using food-grade silicone. Silicone feeding is managed by a next-generation system supplied by ELMET GmbH, another leader in the sector. Part removal and placement are handled using equipment supplied by GF Automazioni S.r.l. To preserve product cleanliness, the parts are bagged at the end of the line using a device supplied by Ravizza Packaging S.r.l.";
+        document.getElementById("flagImg").src = "it.png";
+      } else {
+        intro.innerHTML =
+          "Cliccando sui loghi qui sotto, si può accedere ai siti di ciascun partner ed approfondirne la conoscenza.";
+        main.innerHTML =
+          "WITTMANN è leader nelle soluzioni per lo stampaggio ad iniezione di silicone liquido ed offre isole produttive con soluzioni totalmente integrate, caratterizzate da una elevata efficienza e da bassissimi consumi energetici. L’applicazione esposta è stata realizzata in collaborazione con Silikomart S.r.l., fornitrice dello stampo, e di Ewikon Italia S.r.l., fornitrice del sistema di iniezione “a canale freddo”. L’isola produce uno stampino per pasticceria, ovviamente utilizzando un silicone adatto alle applicazioni alimentari. L’alimentazione del silicone è stata affidata ad un dispositivo di ultima generazione fornito da ELMET GmbH, anch’essa leader del settore. Il prelievo ed il deposito dei pezzi sono stati effettuati utilizzando una attrezzatura fornita da GF Automazioni S.r.l. e per preservare la pulizia del manufatto, i pezzi sono insacchettati a fine linea utilizzando un dispositivo fornito da Ravizza Packaging S.r.l.";
+        document.getElementById("flagImg").src = "en.png";
+      }
+      italian = !italian;
+    }
+  </script>
 
 </body>
 </html>
